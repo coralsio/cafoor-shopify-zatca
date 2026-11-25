@@ -1,0 +1,13 @@
+{
+  "name": "@cafoor/shopify-zatca-connector",
+  "version": "1.0.0",
+  "description": "Official Shopify App & Webhook Connector for Cafoor Cloud ERP — automated Saudi ZATCA Phase 2 e-invoicing, UAE FTA, multi-warehouse stock & double-entry accounting",
+  "type": "module",
+  "main": "./src/connector.mjs",
+  "scripts": {
+    "test": "node --test test/connector.test.mjs"
+  },
+  "keywords": ["shopify", "shopify-app", "zatca", "erp", "saudi-arabia", "uae", "einvoicing", "accounting", "cafoor"],
+  "homepage": "https://cafoor.com/en/integrations",
+  "license": "MIT"
+}

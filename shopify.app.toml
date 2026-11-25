@@ -1,0 +1,20 @@
+# Shopify Partners App Store declarative configuration for Cafoor Cloud ERP
+name = "Cafoor Cloud ERP & ZATCA"
+application_url = "https://cafoor.com/en/integrations"
+embedded = false
+
+[access_scopes]
+scopes = "read_orders,read_customers,read_products,write_inventory"
+
+[auth]
+redirect_urls = [
+  "https://cafoor.com/en/app/settings/integrations",
+  "https://cafoor.com/ar/app/settings/integrations"
+]
+
+[webhooks]
+api_version = "2025-10"
+
+  [[webhooks.subscriptions]]
+  topics = [ "orders/create", "orders/paid", "orders/cancelled", "products/update" ]
+  uri = "/api/integrations/shopify/webhook"
